@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var nome = "José da Silva";
+        var salarioBruto = 1000;
+        var inss = 8.5;
+        var irrf = 12.5;
+        var salarioRestante = salarioBruto - (salarioBruto*(inss/100));
+        var salarioLiquido = salarioRestante - (salarioRestante*(irrf/100));
+        document.writeln("Nome: " + nome);
+        document.writeln("Salário Bruto: " + "R$ " + salarioBruto);
+        document.writeln("Salário Líquido: " + "R$ " + salarioLiquido + " (Desconto INSS: R$ " + salarioBruto*(inss/100) + " e Desconto IRRF: R$ " + salarioRestante*(irrf/100) + ")");
+    </script>
+</body>
+</html>
